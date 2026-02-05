@@ -56,6 +56,10 @@
 		</repository>
 	</distributionManagement>
 
+	<properties>
+  		<sonar.qualitygate.wait>true</sonar.qualitygate.wait>
+	</properties>
+
 
 	<build>
 		<plugins>
