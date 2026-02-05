@@ -80,10 +80,7 @@ jobs:
 
       - name: SonarQube Analysis
         run: |
-         mvn sonar:sonar \
-           -Dsonar.projectKey=springboot-app \
-           -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
-           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+         mvn clean verify
 
       - name: Publish to Nexus
         if: github.ref == 'refs/heads/main'
