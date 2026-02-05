@@ -2,8 +2,6 @@ package com.example.demo_github;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class DemoGithubApplication {
@@ -12,13 +10,5 @@ public class DemoGithubApplication {
 		SpringApplication.run(DemoGithubApplication.class, args);
 	}
 
-}
-
-@RestController
-class HelloWorldController {
-	@GetMapping("/")
-	public String SayHello() {
-		return "Hello, World!";
-	}
 }
 
