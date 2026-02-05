@@ -40,4 +40,4 @@
             NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
 
         - name: Build & Deploy to Nexus
-          run: mvn clean deploy -DskipTests
+          run: mvn clean verify
